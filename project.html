@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project HTML</title>
+
+	<style type="text/css">
+		
+		body {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			font-family: Arial, sans-serif;
+			line-height: 1.25;
+		}
+
+		div.container {
+			width: 1024px;
+			margin: 0 auto;
+			height: 675px;
+		}
+
+		div.subContainer_1 {
+			width: 100%;
+			margin-top: -14px;
+			height: 180px;
+			/*padding: 10px;*/
+			box-sizing: border-box;
+			
+		}
+
+		div.bgImage {
+			width: 100%;
+			height: 160px;
+			background-image: url(\images/templatemo_bg.jpg);
+			overflow: hidden;
+		}
+
+		div.subContainer_2 {
+			width: 81%;
+		    height: 520px;
+		    margin: 0px 145px;
+		    /* padding: 10px; */
+		    box-sizing: border-box;
+		    overflow: hidden;
+		    color: darkslategray;
+		}
+
+		header {
+			width: 100%;
+			height: 120px;
+			padding: 8px;
+			box-sizing: border-box;
+		}
+
+		.left {
+			width: 60%;
+			height: 100px;
+			padding: 5px;
+			float: left;
+			margin-left: 12%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.just {
+		    position: absolute;
+		    left: 45px;
+		    bottom: 50px;
+		    font-size: 40px;
+		    color: #11ACE5;
+		}
+
+		.text {
+		    position: absolute;
+		    left: 45px;
+		    bottom: 45px;
+		    font-size: 9.5px;
+		    font-style: italic;
+		    font-weight: bold;
+		}
+
+		.right {
+			width: 18%;
+		    height: 93px;
+		    padding: 5px;
+		    float: left;
+		    margin-right: 7%;
+		    position: relative;
+		}
+
+		.logos {
+		    position: absolute;
+		    right: 5px;
+		    bottom: 44px;
+		    width: 91%;
+		    box-sizing: border-box;
+		}
+
+		.logo_1 {
+			position: absolute;
+		    right: 105px;
+    		top: -30px;
+		}
+
+		.logo_2 {
+			position: absolute;
+			right: 64px;
+			top: -30px;
+		}
+
+		.logo_3 {
+			position: absolute;
+			right: 14px;
+			top: -30px;
+		}
+
+		.input {
+		    position: absolute;
+		    cursor: pointer;
+		    left: 9px;
+		    top: 59px;
+		    background-image: url(\images/templatemo_search.jpg);
+		    background-repeat: no-repeat;
+		    padding: 11px;
+		    border: aliceblue;
+		    border-radius: 6px;
+		}
+
+		.mgGlass {
+			position: absolute;
+		    left: 150px;
+    		top: 67px;
+		}
+
+		.headerImage {
+			width: 100%;
+			height: 140px;
+
+		}
+
+		nav {
+		    width: 100%;
+    		padding: 7px;
+    		height: 35px;
+    		box-sizing: border-box;
+		}
+
+		nav img {
+			width: 100%;
+		}
+
+		ul {
+		    margin: 0px;
+		    margin-left: 380px;
+		    padding: 0px;
+		    list-style: none;
+		}
+
+		ul li {
+			float: left;
+			margin: 0 20px;
+		}
+
+		ul li a {
+			text-decoration: none;
+			font-size: 12px;
+			color: black;
+		}
+
+		ul li a:hover {
+			color: white;
+		}
+
+		ul li a.active {
+			color: white;
+		}
+
+		aside {
+			float: left;
+			width: 30%;
+			padding: 5px;
+			height: 408px;
+			box-sizing: border-box;
+		}
+
+		aside div {
+			width: 92%;
+			height: 175px;
+			padding: 8px;
+			/*border: 2px solid blue;*/
+			position: relative;
+			overflow: hidden;
+		}
+
+		.testimonials {
+			z-index: 1;
+			opacity: 0.8;
+			font-size: 15px;
+			right: -6px;
+		}
+
+		.testimonials p {
+			font-size: 9px;
+		}
+
+		.what {
+			z-index: 1;
+		    position: absolute;
+		    left: 138px;
+		    top: 19px;
+		    font-size: 9px;
+		    font-weight: bold;
+		    color: black;
+		}
+
+		.one {
+		    position: absolute;
+		    left: -1px;
+		    top: 31px;
+		    height: 159px;
+		    width: 239px;
+
+		}
+
+		.top {
+		    position: absolute;
+		    left: -2px;
+		    top: 0px;
+		    width: 241px;
+		}
+
+		.news {
+			opacity: 0.9;
+			font-size: 14px;
+		}
+
+		.news p {
+			font-size: 9px;
+		}
+
+		.services_1 {
+		    float: left;
+		    width: 45%;
+		    height: 150px;
+		    /*border: 1px solid hotpink;*/
+		    margin-left: 18px;
+		    margin-top: 2px;
+		    position: relative;
+		    overflow: hidden;
+		}
+
+		.services_2 {
+			float: left;
+		    width: 45%;
+		    height: 150px;
+		    /*border: 1px solid hotpink;*/
+		    margin-left: 18px;
+		    margin-top: 2px;
+		    position: relative;
+		    overflow: hidden;
+		}
+
+		.photoGallery {
+			float: left;
+		    width: 44%;
+		    height: 160px;
+		    /*border: 1px solid hotpink;*/
+		    margin-left: 18px;
+		    margin-top: 2px;
+		    position: relative;
+		    overflow: hidden;
+		}
+
+		div.pics {
+			width: 100%;
+			height: 120px;
+			margin-top: 2px;
+		}
+
+		div.pics img {
+		    width: 26%;
+		    height: 57px; 
+		    margin-right: 12px;
+		    margin-top: 2px;
+		}
+
+		.contactInfo {
+			float: left;
+		    width: 45%;
+		    height: 160px;
+		    /*border: 1px solid hotpink;*/
+		    margin-left: 18px;
+		    margin-top: 2px;
+		    position: relative;
+		    overflow: hidden;
+		}
+
+		.heading {
+			color: #11ACE5;
+			font-size: 12px;
+		}
+
+		.subText {
+			font-size: 9px;
+		}
+
+		.img {
+			width: 100%;
+		}
+
+		.blue {
+			color: #11ACE5;
+		}
+
+		.green {
+			border: 1px solid #18EA08;
+		    width: 1.5%;
+		    position: absolute;
+		    height: 42px;
+		    top: 7px;
+		    left: 0px;
+		    background-color: #18EA08
+		}
+
+		.skyBlue {
+			border: 1px solid #11ACE5;
+			width: 1.5%;
+			position: absolute;
+			height: 42px;
+			top: 59px;
+			left: 0px;
+			background-color: #11ACE5;
+
+
+		}
+
+		.cream {
+			border: 1px solid #FFD362;
+			width: 1.5%;
+			position: absolute;
+			height: 42px;
+			top: 111px;
+			left: 0px;
+			background-color: #FFD362;
+
+		}
+
+		main {
+			float: left;
+			width: 70%;
+			padding: 5px;
+			height: 495px;
+			box-sizing: border-box;
+		}
+
+		article {
+			width: 90%;
+			box-sizing: border-box;
+			/*border: 1px solid blue;*/
+			height: 100%;
+		}
+
+		.article_1  {
+			position: relative;
+		}
+
+		.article_2 {
+		    width: 98%;
+		    box-sizing: border-box;
+		    height: 37%;
+		    overflow: hidden;
+		}
+
+		.idea {
+			margin-left: 20px;
+			font-size: 15px;
+			color: #11ACE5;
+			position: relative;
+		}
+
+		.section_3 {
+		    position: absolute;
+		    left: 85px;
+		    top: -5px;
+		    width: 69px;
+		    z-index: -1;
+		}
+
+		.article_1_para {
+			font-size: 9px;
+		}
+
+		footer {
+			background-image: url(\images/templatemo_footer_bg.jpg);
+			width: 100%;
+			height: 60px;
+			padding: 25px;
+			box-sizing: border-box;
+			text-align: center;
+			color: whitesmoke;
+			font-size: 10px;
+			margin-top: -25px;
+		}
+
+		.clearfix {
+			clear: both;
+		}
+
+		hr {
+			border: .5px dashed grey;
+			opacity: .3;
+		}
+
+		hr.shadow {
+		    border: 0.5px dashed grey;
+		    opacity: .5;
+		    box-shadow: 0px 4px 5px 0px grey;
+		}
+
+		hr.rotate {
+		    border: .5px dashed grey;
+		    opacity: .3;
+		    transform: rotate(90deg);
+		    width: 156px;
+		    position: absolute;
+		    right: 37%;
+    		bottom: -91px;
+		}
+
+		.article_3 {
+			position: relative;
+		}
+
+		.two {
+			height: 190px;
+		}
+
+		
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="subContainer_1">
+			
+			<div class="bgImage">
+				
+				<header>
+			
+				<div class="left">
+					<div class="just">JUST</div>
+					<div class="text">Website Design Suggestion</div>
+					<img class="headerImage" src="images/templatemo_header.jpg">
+				</div>
+
+				<div class="right">
+					<div class="logos">
+						<div class="logo_1">
+							<a href="#"><img src="images/templatemo_icon_1.jpg"></a>
+						</div>
+						<div class="logo_2">
+							<a href="#"><img src="images/templatemo_icon_2.jpg"></a>
+						</div>
+						<div class="logo_3">
+							<a href="#"><img src="images/templatemo_icon_3.jpg"></a>
+						</div>		
+					</div>
+
+					<input type="text" name="" class="input" placeholder="SEARCH">
+
+					<div class="mgGlass">
+						<img src="images/templatemo_botton.jpg">
+					</div>
+
+									
+				</div>
+
+		   	</header>
+
+			<nav>
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Testimonial</a></li>
+					<li><a href="#">News & Events</a></li>
+					<li><a href="#">Contact</a></li>
+
+				</ul>
+				
+			</nav>
+
+
+			</div>
+
+			
+		</div>
+		
+		<div class="subContainer_2">
+			<aside>
+				<div>
+					<div class="testimonials">Testimonials
+						<p>Nulla enim nibh, consectetuer sed, vestibulum elementum, sagittis nec, diam.</p>
+
+						<p>Mauris blandit vehicula neque. Proin consectetuer. Donec venenatis. Cras urna metus, feugiat non, consectetuer quis, pretium quis, nunc.</p>
+
+						<p>Nullam pede purus, tempor a, imperdiet in, porttitor at, nulla. Aliquam elit risus, volutpat quis, mattis ac, elementum eget, mauris. In hac habitasse platea dictumst.</p>
+					</div>
+
+					<span class="what">WHAT THAT SAY</span>
+
+					<img src="images/templatemo_section_1_bottom.jpg" class="one">
+					<img src="images/templatemo_section_1_top.jpg" class="top">
+				</div>
+
+				<hr>
+				
+				<div class="two">
+					<div class="news">News & Events
+
+						<div class="divPara">
+							
+							<p class="green">
+								<p class="blue">18 December 2024</p>
+								<p>Pellen tesque dolor nulla, con gue vitae, frin gilla in, varius a, orci ma uris con.
+								</p>
+								
+							</p>
+							<p class="skyBlue">
+								<p class="blue">22 November 2024</p>
+								<p>Proin vel libero id erat venen atis accu msan. Nunc blan dit orci sit amet risus.
+								</p>
+								
+							</p>
+							<p class="cream">
+								<p class="blue">30 October 2024</p>
+								<p>Duis pul vinar scele risque ante. Mor bit risti que, risus quis congue pul vinar.
+								</p>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<hr>
+				
+			</aside>
+
+			<main>
+				<article>
+					<div class="article_1">
+						<div class="news">Welcome</div>
+						<div class="idea">To Creative <strong>IDEA</strong></div>
+						<img src="images/templatemo_section_3_bg.jpg" class="section_3">
+
+						<p class="article_1_para">
+							This is a template jpg suggestion sample and you can modify, apply this layout for your websites. Nunc blandit orci sit amet risus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut iaculis lacinia purus.
+						</p>
+						<p class="article_1_para">
+							Aliquam magna. Phasellus id felis.Donec mollis aliquet ligula. Maecenas adipiscing elementum ipsum. Pellentesque vitae magna. Sed nec est. Suspendisse a nibh tristique justo rhoncus volutpat. Suspendisse vitae neque eget ante tristique vestibulum.
+						</p>
+						
+					</div>
+
+					<hr>
+
+					<div class="article_2">
+						<div class="news">Services</div>
+
+						<div class="services_1">
+							<img src="images/templatemo_img_1.jpg" class="img">
+							<div class="heading">Creative Graphic Design</div>
+							<p class="subText">
+								Aliquam sagittis molestie sapien. Nulla tellus risus, tincidunt vitae, sagittis vel, interdum at, erat. Duis vitae velit. Ut ultricies. Fusce sollicitudin nisl.
+							</p>
+						</div>
+
+
+						<div class="services_2">
+							<img src="images/templatemo_img_2.jpg" class="img">
+							<div class="heading">Special Web Design</div>
+							<p class="subText">
+								Phasellus tincidunt, tortor lacinia blandit commodo, nunc augue mattis eros, ut convallis est augue vel.
+							</p>
+						</div>
+
+					</div>
+
+					<hr class="shadow">
+
+					<div class="article_3">
+						
+						<div class="photoGallery">
+
+							<div class="news">Photo Gallery</div>
+
+							<div class="pics">
+								<img src="images/templatemo_thumb_1.jpg">
+								<img src="images/templatemo_thumb_2.jpg">
+								<img src="images/templatemo_thumb_3.jpg">
+								<img src="images/templatemo_thumb_4.jpg">
+								<img src="images/templatemo_thumb_5.jpg">
+								<img src="images/templatemo_thumb_6.jpg">
+							</div>
+							
+						</div>
+
+						<hr class="rotate"></hr>
+
+						<div class="contactInfo">
+							
+							<div class="news">Contact Info.</div>
+
+							<p class="subText">
+								Pellentesque odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+							</p>
+							<p class="subText">
+								111/222 Lorem ipsum dolor sit,consectetuer adipiscing elit. Nunc quis sem nec, 10100
+							</p>
+							<p class="subText">
+								Tel : 010-100-0100
+							</p>
+							<p class="subText">
+								Fax : 020-200-0200
+							</p>
+							<p class="subText">
+								Email : info@yourcompany.com
+							</p>
+
+						</div>
+
+					</div>
+
+
+				</article>
+			</main>
+
+			<div class="clearfix"></div>
+
+
+		</div>
+
+			<footer>
+				Copyright &copy; 2021 <u>Your Company Name.</u> All right reserved
+			</footer>
+		
+
+	</div>
+
+</body>
+</html>
